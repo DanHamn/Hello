@@ -16,13 +16,17 @@ namespace Hello
 
 
             Console.WriteLine("Hello, " + name + "!");
-            if(hoursOfSleep >= 8)
+            if(hoursOfSleep >= 7.5 && hoursOfSleep <= 8.5)
             {
                 Console.WriteLine("You are well rested.");
             }
-            else
+            else if(hoursOfSleep < 7.5)
             {
                 Console.WriteLine("You need more sleep.");
+            }
+            else if(hoursOfSleep > 8.5)
+            {
+                Console.WriteLine("You got to much sleep.");
             }
         }
     }
